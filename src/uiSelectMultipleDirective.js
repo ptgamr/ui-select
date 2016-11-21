@@ -54,12 +54,6 @@ uis.directive('uiSelectMultiple', ['uiSelectMinErr','$timeout', function(uiSelec
 
       };
 
-      ctrl.getPlaceholder = function(){
-        //Refactor single?
-        if($select.selected && $select.selected.length && !$select.placeholderAlwaysVisible) return;
-        return $select.placeholder;
-      };
-
 
     }],
     controllerAs: '$selectMultiple',

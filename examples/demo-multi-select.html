@@ -114,7 +114,7 @@
 
   <h3>Array of strings</h3>
   <ui-select multiple ng-model="multipleDemo.colors" theme="bootstrap" ng-disabled="disabled" close-on-select="false" style="width: 300px;" title="Choose a color">
-    <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+    <ui-select-match placeholder="Select colors..." placeholder-always-visible="true">{{$item}}</ui-select-match>
     <ui-select-choices repeat="color in availableColors | filter:$select.search">
       {{color}}
     </ui-select-choices>

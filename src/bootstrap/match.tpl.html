@@ -5,7 +5,7 @@
       ng-disabled="$select.disabled" 
       ng-click="$select.activate()"
       style="outline: 0;">
-    <span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted">{{$select.placeholder}}</span>
+    <span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted">{{$select.getPlaceholder()}}</span>
     <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear && !$select.isEmpty()}" ng-transclude=""></span>
     <i class="caret pull-right" ng-click="$select.toggle($event)"></i>
     <a ng-show="$select.allowClear && !$select.isEmpty()" aria-label="{{ $select.baseTitle }} clear" style="margin-right: 10px" 

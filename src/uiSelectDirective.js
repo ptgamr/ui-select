@@ -36,6 +36,13 @@ uis.directive('uiSelect',
         $select.focusserTitle = $select.baseTitle + ' focus';
         $select.focusserId = 'focusser-' + $select.generatedId;
 
+        // Keep Placeholder anyway
+        $select.getPlaceholder = function(){
+          //Refactor single?
+          if($select.selected && $select.selected.length && !$select.placeholderAlwaysVisible) return;
+          return $select.placeholder;
+        };
+
         $select.closeOnSelect = function() {
           if (angular.isDefined(attrs.closeOnSelect)) {
             return $parse(attrs.closeOnSelect)();
