@@ -6,7 +6,7 @@
          aria-owns="ui-select-choices-{{ $select.generatedId }}"
          aria-activedescendant="ui-select-choices-row-{{ $select.generatedId }}-{{ $select.activeIndex }}"
          class="form-control ui-select-search"
-         placeholder="{{$select.placeholder}}"
+         placeholder="{{$select.getPlaceholder()}}"
          ng-model="$select.search"
          ng-show="$select.searchEnabled && $select.open">
   <div class="ui-select-choices"></div>

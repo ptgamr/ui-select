@@ -9,6 +9,7 @@
     <div class="select2-search" ng-show="$select.searchEnabled">
       <input type="text" autocomplete="false" autocorrect="false" autocapitalize="off" spellcheck="false"
        role="combobox"
+       placeholder="{{$select.getPlaceholder()}}"
        aria-expanded="true"
        aria-owns="ui-select-choices-{{ $select.generatedId }}"
        aria-label="{{ $select.baseTitle }}"
