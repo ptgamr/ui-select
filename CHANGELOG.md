@@ -1,4 +1,14 @@
 <a name="0.14.2"></a>
+## [0.14.2](https://github.com/angular-ui/ui-select/compare/v0.14.2...v0.14.2) (2016-11-21)
+
+
+### Bug Fixes
+
+* make compatible with Angular 1.5 and non-cached templates ([0e85670](https://github.com/angular-ui/ui-select/commit/0e85670)), closes [#1422](https://github.com/angular-ui/ui-select/issues/1422) [#1356](https://github.com/angular-ui/ui-select/issues/1356) [#1325](https://github.com/angular-ui/ui-select/issues/1325) [#1239](https://github.com/angular-ui/ui-select/issues/1239)
+
+
+
+<a name="0.14.2"></a>
 ## [0.14.2](https://github.com/angular-ui/ui-select/compare/v0.14.1...v0.14.2) (2016-01-28)
 
 
